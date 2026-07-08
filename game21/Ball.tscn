@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dm5jrnxmxnuof"]
+
+[ext_resource type="Texture2D" uid="uid://c7sqph6fvgg11" path="res://163-1634065_master-ball-sprite-png-png-download-pokeball-pixel.png" id="1_gk6bx"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_r0du0"]
+bounce = 0.5
+
+[sub_resource type="CircleShape2D" id="2"]
+radius = 37.1452
+
+[node name="Ball" type="RigidBody2D" unique_id=515233045]
+physics_material_override = SubResource("PhysicsMaterial_r0du0")
+gravity_scale = 4.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1455899780]
+position = Vector2(-113.6875, -74.625015)
+shape = SubResource("2")
+
+[node name="1631634065MasterBallSpritePngPngDownloadPokeballPixel" type="Sprite2D" parent="." unique_id=556034851]
+position = Vector2(-112.68744, -74.62502)
+scale = Vector2(0.10072676, 0.10305551)
+texture = ExtResource("1_gk6bx")
